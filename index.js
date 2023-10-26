@@ -154,9 +154,9 @@ bot.on("message", async(lol) => {
                 */
                       if (!isGroup && !isCmd && !isMedia) {
 await lol.replyWithChatAction("typing")
-tai = await fetchJson(`https://simsimi.fun/api/v2/?mode=talk&lang=id&message=${body}&filter=true`)
-                    /* samii = simii.success*/
-                     await reply(tai.success)
+tai = await fetchJson(`https://api.srart24.xyz/srart24/simi?apikey=MlwlKq3V&pesan=${body}`)
+                    ilhan = tai.result
+                     await reply(ilhan)
                       } 
         }
     } catch (e) {
