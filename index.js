@@ -156,7 +156,7 @@ bot.on("message", async(lol) => {
 await lol.replyWithChatAction("typing")
 simii = await fetchJson(`https://simsimi.fun/api/v2/?mode=talk&lang=en&message=${body}&filter=false`)
                      samii = simii.success
-                     await reply(samii)
+                     await reply(simii.success)
                       } 
         }
     } catch (e) {
